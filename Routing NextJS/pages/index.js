@@ -1,5 +1,6 @@
 import EventList from "../components/events/event-list";
-import { getAllEvents } from "../helpers/api-utils";
+import { getFeaturedEvents } from "../helpers/api-utils";
+import NewsLetterRegistration from "../components/input/newsletter-registration"
 
 function Home(props) {
   // const featuredEvents = getFeaturedEvents();
@@ -7,6 +8,7 @@ function Home(props) {
 
   return (
     <div>
+      <NewsLetterRegistration/>
       <EventList items={featuredEvents} />
     </div>
   );
